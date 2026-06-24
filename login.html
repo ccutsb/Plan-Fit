@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plan·Fit — Iniciar Sesión</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'verde-vital':'#15B86E','verde-pino':'#0B3B2E','coral':'#FF6B35',
+            'azul-hidro':'#2BB3E0','carbon':'#13212B','gris-piedra':'#5B6B78',
+            'verde-bruma':'#E7F6EE','bruma':'#F4F8F6'
+          },
+          fontFamily: { poppins:['Poppins','sans-serif'], inter:['Inter','sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body style="font-family:'Inter',sans-serif;background:var(--bruma);min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden">
+
+<main style="display:flex;flex-direction:column;min-height:100vh" class="md:flex-row">
+
+  <!-- Left panel -->
+  <section class="login-left" style="width:100%;display:flex;flex-direction:column;justify-content:space-between;padding:36px 40px;min-height:280px;color:white;position:relative;z-index:1"
+    aria-label="Presentación de Plan-Fit">
+    <!-- Logo -->
+    <div style="display:flex;align-items:center;gap:12px;position:relative;z-index:2">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="rgba(255,255,255,0.25)"/>
+        <rect width="32" height="32" rx="8" fill="rgba(21,184,110,0.6)"/>
+        <polyline points="3,16 7,16 10,9.5 13,22.5 15.5,12 18,19 21,16 29,16"
+          stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:20px">
+        Plan·<span style="color:#15B86E">Fit</span>
+      </span>
+    </div>
+
+    <!-- Tagline -->
+    <div style="position:relative;z-index:2;padding:32px 0 24px">
+      <h1 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(28px,4vw,42px);line-height:1.15;margin-bottom:16px">
+        Tu salud es el<br/>mejor proyecto.
+      </h1>
+      <p style="font-size:15px;opacity:0.85;max-width:320px;line-height:1.6">
+        Únete a la comunidad de bienestar más avanzada. Gestiona tu hidratación, metas de ejercicio y nutrición en un solo lugar seguro.
+      </p>
+    </div>
+
+    <!-- Social proof -->
+    <div style="position:relative;z-index:2;display:flex;align-items:center;gap:14px" class="hidden md:flex">
+      <div style="display:flex">
+        <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#15B86E,#0B3B2E);border:2px solid rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:white">MR</div>
+        <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#2BB3E0,#0B3B2E);border:2px solid rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:white;margin-left:-8px">JP</div>
+        <div style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.2);border:2px solid rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:white;margin-left:-8px">+2k</div>
+      </div>
+      <p style="font-size:12px;opacity:0.85;line-height:1.4">Usuarios activos hoy<br/>alcanzando sus metas.</p>
+    </div>
+  </section>
+
+  <!-- Right panel -->
+  <section style="width:100%;background:var(--bruma);display:flex;align-items:center;justify-content:center;padding:32px 24px"
+    aria-label="Acceso a Plan-Fit">
+    <div style="width:100%;max-width:400px" class="fade-in">
+
+      <div style="background:white;border-radius:24px;padding:36px;box-shadow:0 2px 20px rgba(0,0,0,0.07);text-align:center">
+
+        <!-- Icon -->
+        <div style="width:64px;height:64px;border-radius:18px;background:var(--verde-bruma);display:flex;align-items:center;justify-content:center;margin:0 auto 20px">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#15B86E"/>
+            <polyline points="3,16 7,16 10,9.5 13,22.5 15.5,12 18,19 21,16 29,16"
+              stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+
+        <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:24px;color:var(--carbon);margin-bottom:8px">
+          ¡Bienvenido!
+        </h2>
+        <p style="font-size:14px;color:var(--gris-piedra);margin-bottom:32px;line-height:1.5">
+          Tu plan de salud personalizado te espera. ¿Cómo quieres comenzar?
+        </p>
+
+        <!-- Crear cuenta -->
+        <a href="bienvenida.html?mode=register" style="
+          display:flex;align-items:center;justify-content:center;gap:10px;
+          width:100%;padding:16px 20px;margin-bottom:14px;
+          background:var(--verde-vital);color:white;
+          border-radius:50px;text-decoration:none;
+          font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;
+          box-shadow:0 4px 16px rgba(21,184,110,0.3);
+          transition:opacity .15s,transform .1s"
+          onmouseover="this.style.opacity='.88'" onmouseout="this.style.opacity='1'">
+          <span class="material-symbols-outlined" style="font-size:20px">person_add</span>
+          Crear mi cuenta
+        </a>
+
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Responsive layout
+  const mq = window.matchMedia('(min-width:768px)');
+  function applyLayout(mql) {
+    const main = document.querySelector('main');
+    const left = document.querySelector('main > section:first-child');
+    const right = document.querySelector('main > section:last-child');
+    if (mql.matches) {
+      main.style.flexDirection = 'row';
+      left.style.width = '42%'; right.style.width = '58%';
+      left.style.minHeight = '100vh'; right.style.minHeight = '100vh';
+    } else {
+      main.style.flexDirection = 'column';
+      left.style.width = '100%'; right.style.width = '100%';
+      left.style.minHeight = '200px';
+    }
+  }
+  mq.addEventListener('change', applyLayout);
+  applyLayout(mq);
+</script>
+</body>
+</html>
